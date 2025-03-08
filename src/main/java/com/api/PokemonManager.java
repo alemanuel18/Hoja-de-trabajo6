@@ -129,4 +129,12 @@ class PokemonManager {
             .filter(p -> Arrays.asList(p.abilities.split(", ")).contains(ability))
             .forEach(p -> System.out.println(p.name + " - " + p.abilities));
     }
+
+    public Map<String, Pokemon> getUserCollection() {
+        return userCollection;
+    }
+    
+    public Map<String, Pokemon> getPokemonMap() {
+        return pokemonMap;
+    }
 }

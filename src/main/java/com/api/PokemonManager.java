@@ -25,8 +25,8 @@ class PokemonManager {
      * @param factory the MapFactory to create the user collection map.
      */
     public PokemonManager(MapFactory factory) {
-        this.pokemonMap = new HashMap<>();
-        this.userCollection = factory.createMap();
+        this.pokemonMap = factory.createMap();
+        this.userCollection = new HashMap<>();
     }
 
     /**
